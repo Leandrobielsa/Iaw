@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Actividad 2</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        form { border: 1px solid #ccc; padding: 20px; width: 300px; }
+        div { margin-bottom: 10px; }
+        label { display: inline-block; width: 100px; }
+    </style>
+</head>
+<body>
+    
+    <h3>Formulario para la tabla</h3>
+    <p>Introduce el rango de filas para la tabla.</p>
+    
+    <form action="tabla2.php" method="GET">
+        <div>
+            <label for="inicio">Fila inicial:</label>
+            <input type="number" id="inicio" name="inicio" value="5">
+        </div>
+        <div>
+            <label for="fin">Fila final:</label>
+            <input type="number" id="fin" name="fin" value="16">
+        </div>
+        <div>
+            <input type="submit" value="Generar Tabla">
+        </div>
+    </form>
+
+</body>
+</html>
